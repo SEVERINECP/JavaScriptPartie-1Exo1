@@ -2,24 +2,29 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>JavaScript Partie1 Exo1</title>
   </head>
   <body>
     <script>
-      //Déclaration des variables
-      var firstname = 'Sev';
-      var numberOne = 12;
-      var numberTwo = 2;
-      var bool = TRUE;
-      /*Déclaration d'une variable result qui contient
-      le résultat de la multiplication des nombre1 et
-      nombre2*/
-      var result = numberOne + numberTwo;
-      alert(result);
-      //Décalration d'une fonction qui fait...
-      function nameFunction (){
-        code
-      }
+      // Déclaration des variables
+      var firstname = 'John';
+      var lastname = 'DOE';
+      var city = 'NewYork';
+      /* alert permet de créer la fenetre puis entre parenthèse la Concaténation qui permet d'ajouter différentes variables,
+       le \n permet d'aller à la ligne*/
+      alert('Nom : ' + firstname + '\nPrénom : ' + lastname + '\nVille : ' + city );
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     /* Autre script pour representer l'usage du script sweet alert ci-dessus
+     (cliquer deux fois sur l'affichage pour que le style se transforme)*/
+    <script>
+      var firstname = 'John';
+      var lastname = 'DOE';
+      var city = 'NewYork';
+      swal('Nom : ' + firstname + '\nPrénom : ' + lastname + '\nVille : ' + city );
+    //affichage des variables avec une template-string (autre possibilité de coder!)
+      alert(`Nom: ${firstname} )
     </script>
   </body>
 </html>
